@@ -5,7 +5,7 @@ class CreateRedirections < Sequel::Migration
   
   def up
     create_table :redirections do
-      varchar :shorturl
+      bigint :shorturl
       varchar :target
     end
   end
